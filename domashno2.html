@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Make orders</title>
+        <link rel = "stylesheet" type = "text/css" 
+         href = "style.css">
+    </head>
+
+    <body>
+       <fieldset>
+            <h1>Tea's Diner</h1>
+            <p>Works: Monday through Friday <br> 11am-3pm <br> $5.50 plus tax</p>
+            <p>Includes sandwich, snack and a drink. Bon Appetit!</p>
+
+            <form method = "post" action = "#">
+
+            <fieldset>
+                <legend>Order Information</legend>
+                
+                <label for="name"><strong>Name:</strong></label><br>
+                <input type="text" id="name" name="name" placeholder="Please enter your name here."><br>
+
+                <input type="radio" id="here" name="heretogo" required>
+                <label for="here">Here</label><br>
+                <input type="radio" id="togo" name="heretogo">
+                <label for="togo">To Go</label>
+                <img src = "kola.webp" width = "70" height = "30"
+         alt = "C++ How to Program book cover">
+            </fieldset>
+           
+            <fieldset>
+                <legend>Sandwiches</legend>
+
+                <p>
+                    <label><strong>Monday:</strong></label><br>
+                    <input type="radio" id="mozzarella" name="mon">
+                    <label for="mozzarella">Tomato Mozarella</label><br>
+                    <input type="radio" id="chicken" name="mon">
+                    <label for="chicken">Chicken Salad</label>
+                </p>
+
+                <p>
+                    <label><strong>Tuesday:</strong></label><br>
+                    <input type="radio" id="greek" name="tue">
+                    <label for="greek">Greek Salad Wrap</label><br>
+                    <input type="radio" id="toto" name="tue">
+                    <label for="toto">Toto Wrap</label>
+                </p>
+
+                <p>
+                    <label><strong>Wednesday:</strong></label><br>
+                    <input type="radio" id="redpepper" name="wed">
+                    <label for="redpepper">Red Pepper Hummus</label><br>
+                    <input type="radio" id="turkey" name="wed">
+                    <label for="turkey">Roasted Turkey</label>
+                </p>
+                <p>
+                    <label><strong>Thursday:</strong></label><br>
+                    <input type="radio" id="carrot" name="thu">
+                    <label for="carrot">Carrot Ginger Hummus Wrap</label><br>
+                    <input type="radio" id="egg" name="thu">
+                    <label for="egg">Egg Salad</label>
+                </p>
+        
+                <p>
+        
+                    <label ><strong>Friday:</strong></label><br>
+                    <input type="radio" id="dado" name="fri">
+                    <label for="dado">Dado Wrap</label><br>
+                    <input type="radio" id="tuna" name="fri">
+                    <label for="tuna">Tuna Wrap</label>
+                </p>
+                
+                <hr>
+
+                <input type = "checkbox" id = "bread" name = "GlutenFreeBread">
+                <label for = "bread">Gluten Free Bread (50¢ extra)</label><br>
+
+            </fieldset>
+
+            
+            <fieldset>
+                    <legend>Snacks</legend>
+                    
+                    <label for="snacks"><strong>Snack</strong></label><br>
+                    <input type="radio" id="apple" name="snacks">
+                    <label for="apple">Apple</label><br>
+                    <input type="radio" id="banana" name="snacks">
+                    <label for="banana">Banana</label><br>
+                    <input type="radio" id="chips" name="snacks">
+                    <label for="chips">Potato Chips</label>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Drinks</legend>
+                <p>
+                    <label>Drink
+                        <select id="drinks">
+                        <option selected>Herbal Tea</option>
+                        <option>Soda</option>
+                        <option>Coffee</option>
+                        <option>Mineral Water</option>
+                        <option>Sparkling Water</option>
+                    </label>
+
+                </p>
+                    
+                <hr>
+
+                <input type="checkbox" id="large" name="largedrink">
+                <label for="large">Large Drink(75 &cent; extra)</label>
+                <img src = "kafe.png" width = "50" height = "50"
+                alt = "C++ How to Program book cover">
+            </fieldset>    
+                <p>
+                    <button type="submit">Place Order</button>
+                </p>
+        
+        </fieldset>
+    </form>
+    </body>
+</html>
